@@ -12,7 +12,6 @@ lib/%.js: src/%.iced
 	$(ICED) -I browserify -c -o `dirname $@` $<
 
 $(BUILD_STAMP): \
-	lib/base.js \
 	lib/main.js \
 	lib/scrapers/rooter.js \
 	lib/web_service.js 
