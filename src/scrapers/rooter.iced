@@ -1,7 +1,8 @@
-{BaseScraper} = require './base'
-{constants} = require '../constants'
+kbp = require 'kebase-proofs'
+{BaseScraper, constants} = kbp
 {v_codes} = constants
 {decode} = require('pgp-utils').armor
+{make_esc} = require 'iced-error'
 
 ##
 ## Rooter is a test social network, hosted at Keybase.  Tweets on
@@ -13,24 +14,18 @@ exports.RooterScraper = class RooterScraper extends BaseScraper
 
   # ---------------------------------------------------------------------------
 
-  _check_args : (args) ->
-    if not(args.username?)
-      new Error "Bad args to Coinbase proof: no username given"
-    else if not (args.name?) or (args.name isnt 'coinbase')
-      new Error "Bad args to Coinbase proof: type is #{args.name}"
+  _check_args : (args, cb) ->
+    err = if not(args.username?)
+      new Error "Bad args to rooter proof: no username given"
+    else if not (args.name?) or (args.name isnt 'rooter')
+      new Error "Bad args to rooter proof: type is #{args.name}"
     else
       null
+    cb err
 
   # ---------------------------------------------------------------------------
 
-  profile_url : (username) -> "https://coinbase.com/#{username}/public-key"
-
-  # ---------------------------------------------------------------------------
-
-  get_tor_error : (args) -> [ 
-    new Error("Can't (yet) check Coinbase over Tor due to CloudFlare")
-    v_codes.TOR_INCOMPATIBLE 
-  ]
+  feed_url : (username) -> "http://localhost:3000/_/api/1.0/rooter/#{username}.json"
 
   # ---------------------------------------------------------------------------
 
@@ -39,15 +34,11 @@ exports.RooterScraper = class RooterScraper extends BaseScraper
     # calls back with rc, out
     rc       = v_codes.OK
     out      = {}
+    esc = make_esc cb, "hunt2"
 
-    unless (err = @_check_args { username, name })?
-      url = @profile_url username
-      out =
-        rc : rc
-        api_url : url
-        human_url : url
-        remote_id : username
-    cb err, out
+    await @_check_args { username, name }, esc defer()
+    
+    cb null, out
 
   # ---------------------------------------------------------------------------
 
