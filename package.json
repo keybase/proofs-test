@@ -24,5 +24,8 @@
     "iced-error": "0.0.9",
     "iced-runtime": "^1.0.2",
     "keybase-proofs": "^2.0.22"
+  },
+  "devDependencies": {
+    "iced-coffee-script": "^1.8.0-d"
   }
 }
