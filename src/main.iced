@@ -1,7 +1,8 @@
 
 mods = [
-  require('./web_service')
+  require('./constants')
   require('./scrapers/rooter')
+  require('./web_service')
 ]
 
 for m in mods
