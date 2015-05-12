@@ -12,6 +12,7 @@ lib/%.js: src/%.iced
 	$(ICED) -I browserify -c -o `dirname $@` $<
 
 $(BUILD_STAMP): \
+	lib/alloc.js \
 	lib/constants.js \
 	lib/main.js \
 	lib/scrapers/rooter.js \
