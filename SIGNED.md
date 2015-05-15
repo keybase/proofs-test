@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Comment: GPGTools - https://gpgtools.org
 
-iQEcBAABCgAGBQJVVl/LAAoJEJgKPw0B/gTfTakIAIHYCebdjv3KdWndi/4A0ev/
-1a2ZskO9hv4yDUz4ezPdk8+3NzQFCT5YQnCL6rL3BC2B8skKW0wy76/3lwsFwMJB
-bIWuvBtqB5PavDcY7ZS9BQkGLQpxCho7zXRo7TH9rq/8bMrVUrgTPF/x18S6cW7q
-uXuAdNqzhOruNQHchGKQZ2iKYcltdt4LEbhGPI02lEgFKgTSFG2B3f9/x/EBSG0u
-guVv9Nz5qmdkEyZeQInHuGydLgcYF0L/VPAVPIvzScXZKmrKDFZQQMl97IQZ1QYq
-DENVQYrlmB3cBSh2+nG706D5kFDhszxYUqU93Rc1NRsRyL9dU0EG/mh7UOOsqcU=
-=dAZi
+iQEcBAABCgAGBQJVVmKuAAoJEJgKPw0B/gTf0RUIALzXX4HZ6M1bBpgzHD4ML+8C
+7JqNwN3z+1jb5KOvRFVUcE3Lm9+7zESxVaCLJlObQtQF8B/IJuyp78EsAvducJLr
+n59nFHhcKkKBF8AFTUEPkaz0VyYtzHqQPW5Pal575Rng8IyojVw1dsH7yzT01UCp
+YUFK5v+TG/ZwrnWsqMFwbPqVX9JJn9IWw4Fz1Htw6CLIhTUZZfzIJ4y0uJvFLWDy
+uQo9dHZueU/wT57UUIzMG5QP/4ZK85aPC5WN6FvqOmVhSn0X/KaxvM0DzuwZJ/81
+PX6xXSWyUsePD4xDXTCxq16o8HAy/u6PtNCLNAeDH67xMKISxGxnzPlYJm4S7Cs=
+=MPQZ
 -----END PGP SIGNATURE-----
 
 ```
@@ -24,7 +24,7 @@ DENVQYrlmB3cBSh2+nG706D5kFDhszxYUqU93Rc1NRsRyL9dU0EG/mh7UOOsqcU=
 size  exec  file                  contents                                                        
             ./                                                                                    
 538           .gitignore          6f6b25892efbd684badcacf837371d984a590fb3314d031030d7a08e4dd87c69
-39            CHANGELOG.md        5dfc1d8eb979830d93e5950ac5dba9f706be57d2fdc4e443a171c711547badd4
+98            CHANGELOG.md        c47d21813535ae9723d27fa145462e39802a2cc7e1c5328894f9ddde2f3fb34b
 1477          LICENSE             857f84fa908e1423ee6fe624c859fae1a60568c6e1018de34552497e555d244a
 891           Makefile            a74a59acea1398ecb9a327fd74acb8727ea66fc16954b91efb0043529f2aed73
 50            README.md           606e12b9f654de25bd4991de3c9934a4ae7566d733a28d9faa34dd98b98ded2c
@@ -33,9 +33,9 @@ size  exec  file                  contents
 470             constants.js      d639bf566bb14849e1d757fa204f3969fe42d708e2e630ec98b0ea82c97a97f6
 354             main.js           c6de8782aae3c2c3e2f2e1435c409d33802cd32ceb2786d31186fec03291adac
                 scrapers/                                                                         
-6342              rooter.js       55c2bb94d8a2c5bb2a8c11b867320cb1017b2ab589753a9e410cbea001e3ecf6
+6178              rooter.js       17a84a737ef7e0fc465e86f249794abbacc48b78b3d4676c2b128f703eabf7f3
 1589            web_service.js    d9cf28e20c3ae6f95c2ded72120dec881773001aead2a31d53982fea1e36d69e
-696           package.json        8a9ba007a0bee818617a9ab9961168e58a3fd1f86894d4e272a87df94a35fc64
+695           package.json        fa1122d74cb4fa8bac1849576adb28547fd50ac419041cf462df725582b724b1
               src/                                                                                
 400             alloc.iced        42afc21e0ac5aa418954ee2669a65f07ef7161bdf62e92b172c32dd4e9eee7ac
 234             constants.iced    2e34f7209e9c5b5d71a8cdae96a1a314ecf1710952cadf95872bdc2e621d7334

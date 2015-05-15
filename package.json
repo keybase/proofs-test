@@ -1,6 +1,6 @@
 {
   "name": "keybase-proofs-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Test proofs for development purposes",
   "main": "lib/main.js",
   "scripts": {
