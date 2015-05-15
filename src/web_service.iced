@@ -16,7 +16,7 @@ class RooterBinding extends SocialNetworkBinding
     else false
     return ret
 
-  check_name : (n) -> TwitterBinding.check_name(n)
+  check_name : (n) -> RooterBinding.check_name(n)
 
   @name_hint : () -> "alphanumerics, between 1 and 15 characters long"
 

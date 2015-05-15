@@ -1,5 +1,4 @@
-kbp = require 'kebase-proofs'
-{BaseScraper, constants} = kbp
+{BaseScraper, constants} = require 'keybase-proofs'
 {v_codes} = constants
 {decode} = require('pgp-utils').armor
 {make_esc} = require 'iced-error'
@@ -44,7 +43,7 @@ exports.RooterScraper = class RooterScraper extends BaseScraper
       rc = v_codes.FAILED_PARSE
     else
       url = @url { username }
-      await @_get_url_body { url, json : true }, true, defer err, rc, json
+      await @_get_url_body { url, json : true }, defer err, rc, json
       @log "| search input -> #{url} -> #{rc}"
       if rc is v_codes.OK
         rc = v_codes.NOT_FOUND

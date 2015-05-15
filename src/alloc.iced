@@ -9,7 +9,8 @@ lookup_tab = {
 
 #=======================================================
 
-exports.alloc = (type, args) -> proofs.alloc type, args, lookup_tab
+exports.alloc = (type, args) ->
+  proofs.alloc type, args, lookup_tab
 
 #=======================================================
 
